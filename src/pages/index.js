@@ -3,15 +3,12 @@ import { Link } from "gatsby";
 import { Menu, Layout } from '../components';
 import '../components/index.css';
 
-const IndexPage = (props) => (
+const IndexPage = () => (
   <Layout>
-    <div className="layout-content">
-      <main>{props.children}</main>
-      <h1>Hello world, I'm  Minh Thanh</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <div className="introduction-page">
+      <h1>Hello, I'm  Minh Thanh.</h1>
+      <p>A front-end developer from Ho Chi Minh City. <br />I'm interested in design web mockup and turn things in the draft to the "real".</p>
+      <p>Welcome to my website.</p>
     </div>
   </Layout>
 )

@@ -17,12 +17,12 @@
     background-origin: border-box;
     background-size: cover;
     background-blend-mode: overlay;
-    background-color: rgb(255 255 255 / 50%);
+    background-color: rgb(255 255 255 / 60%);
 }
 
 .layout-menu-container {
     flex: 0 1 auto;
-    padding: 60px 40px;
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
     background-color: rgb(255 255 255 / 70%);
@@ -30,6 +30,7 @@
 
 .layout-menu--information {
     display: flex;
+    padding: 0 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,17 @@
 .layout-menu---information-avatar {
     border-radius: 50%;
     margin-bottom: 24px;
+    width: 200px;
+    height: 200px;
+}
+
+.image-avatar {
+    background-image: url('../images/avatar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .layout-menu--navigation-wrapper {
@@ -59,19 +71,58 @@
     font-weight: 500;
 }
 
-.layout-menu--navigation-wrapper>a {
-    text-decoration: none;
-    margin-bottom: 18px;
-    color: #6e6d6d;
+.layout-menu--navigation-item {
     transition: all 0.3s linear;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #6e6d6d;
 }
 
-.layout-menu--navigation-wrapper>a:hover {
-    text-decoration: underline;
-    color: #b59666;
+/* .layout-menu--navigation-item>a {
+    text-decoration: none;
+    color: #6e6d6d;
+} */
+
+.layout-menu--navigation-item:hover {
+    background-color: #b59666;
+    color: #000000;
 }
+
+.layout-menu--navigation-item.portfolio-active, .layout-menu--navigation-item.contact-active, .layout-menu--navigation-item.cv-active {
+    background-color: #b59666;
+    color: #000000;
+}
+
+/* .layout-menu--navigation-item:hover>a {
+    color: #000000;
+} */
 
 .layout-content {
     flex: 1;
     padding: 20px 40px
+}
+
+.introduction-page {
+    margin: 60px 40px;
+    animation: appear 1.5s;
+}
+
+.introduction-page>h1 {
+    font-size: 3em;
+    color: #644118;
+}
+
+.introduction-page>p {
+    font-size: 1.3em;
+    color: #4d4c4c;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

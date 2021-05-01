@@ -4,6 +4,8 @@ import { Menu } from '.';
 export const Layout = (props) => (
     <div className="layout-container bg-cover">
         <Menu />
-        {props.children}
+        <div className="layout-content">
+            {props.children}
+        </div>
     </div>
 )
