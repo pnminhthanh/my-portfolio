@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://minh-thanh-portfolio/./src/pages/portfolio.tsx"],"names":[],"mappings":"sJAMA,UAJkB,kBACd","file":"component---src-pages-portfolio-tsx-362e1f804ceda2608c75.js","sourcesContent":["import * as React from 'react';\n\nconst Portfolio = () => (\n    <div>Portfolio</div>\n)\n\nexport default Portfolio;"],"sourceRoot":""}
