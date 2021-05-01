@@ -2,3 +2,4 @@
 // export default Layout;
 export { Menu } from './Menu'
 export { Layout } from './MyLayout'
+export { Icons } from './Icons';

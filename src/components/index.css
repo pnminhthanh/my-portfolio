@@ -22,10 +22,11 @@
 
 .layout-menu-container {
     flex: 0 1 auto;
-    padding: 60px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     background-color: rgb(255 255 255 / 70%);
+    justify-content: space-between;
 }
 
 .layout-menu--information {
@@ -34,6 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 0 0 300px
 }
 
 .layout-menu--information .name {
@@ -48,8 +50,8 @@
 .layout-menu---information-avatar {
     border-radius: 50%;
     margin-bottom: 24px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 .image-avatar {
@@ -62,13 +64,13 @@
 }
 
 .layout-menu--navigation-wrapper {
-    margin-top: 24px;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     font-size: 20px;
     text-align: center;
     font-weight: 500;
+    flex: 1 1 auto;
 }
 
 .layout-menu--navigation-item {
@@ -79,24 +81,42 @@
     color: #6e6d6d;
 }
 
-/* .layout-menu--navigation-item>a {
-    text-decoration: none;
-    color: #6e6d6d;
-} */
-
 .layout-menu--navigation-item:hover {
     background-color: #b59666;
     color: #000000;
 }
 
-.layout-menu--navigation-item.portfolio-active, .layout-menu--navigation-item.contact-active, .layout-menu--navigation-item.cv-active {
+.layout-menu--navigation-item.active {
     background-color: #b59666;
     color: #000000;
 }
 
-/* .layout-menu--navigation-item:hover>a {
-    color: #000000;
-} */
+.layout-menu--keep-in-touch-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 60px;
+}
+
+.layout-menu--keep-in-touch-wrapper .title {
+    font-size: 1em;
+    font-weight: 300;
+    color: #232129bd;
+}
+
+.layout-menu--social-item {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-menu--social-item:hover {
+    background-color: #64411817;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
 
 .layout-content {
     flex: 1;
@@ -109,8 +129,9 @@
 }
 
 .introduction-page>h1 {
-    font-size: 3em;
-    color: #644118;
+    font-size: 4em;
+    color: #d1ab7e;
+    text-shadow: 2px 2px 3px lightgrey;
 }
 
 .introduction-page>p {
@@ -125,4 +146,9 @@
     to {
         opacity: 1;
     }
+}
+
+.layout-icon-wrapper {
+    width: 32px;
+    height: 32px;
 }
