@@ -12,7 +12,7 @@ export const Menu = () => {
     const navigations = [
         { name: 'PORTFOLIO', link: '/portfolio' },
         { name: 'CONTACT ME', link: '/contact' },
-        { name: 'MY CV', link: '/cv' },
+        { name: 'MY CV', link: 'https://drive.google.com/file/d/1EfHUhBAr06WHcOocttreh44R6XRdjT9x/view?usp=sharing', isOuterLink: true },
     ]
 
     const socialItems = [

@@ -27,8 +27,8 @@ const timelineItems = [
             }
         ],
         paragraphs: [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "Cooperate with team members to distribute value to the product. Work well with product team to release the final valued feature to end-user.",
+            "I am able to work as a independent member when solving a problem and always try my best to do it."
         ]
     },
     {
@@ -53,7 +53,9 @@ const timelineItems = [
             }
         ],
         paragraphs: [
-            "Support teammates in debugging and coding. Complete task assigned by customer. Transfer from Sketch designs to React and handle logics with API"
+            "Support teammates in debugging and coding.",
+            "Receiver task directly from customer and give the final results meet theirs requirements.",
+            "Transfer from Sketch designs to React and handle logics with API"
         ]
     },
 ] as ITimelineItems[];
