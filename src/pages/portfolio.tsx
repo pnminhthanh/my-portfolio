@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Layout } from '../components';
 
+import '../components/index.css';
+
 interface IProjectItems {
     name: string,
     url?: string,
