@@ -1,2 +1,0 @@
-(self.webpackChunkminh_thanh_portfolio=self.webpackChunkminh_thanh_portfolio||[]).push([[341],{1808:function(n,t,e){"use strict";e.r(t);var o=e(7294);t.default=function(){return o.createElement("div",null,"Portfolio")}}}]);
-//# sourceMappingURL=component---src-pages-portfolio-tsx-362e1f804ceda2608c75.js.map
