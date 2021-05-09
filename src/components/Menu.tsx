@@ -37,7 +37,7 @@ export const Menu = () => {
     const __renderSocialItems = () => {
         return socialItems.map(item => {
             let key = 'layout-menu--social-item-' + item.iconKey
-            return <a href={item.link} target="_blank" type="button">
+            return <a key={key} href={item.link} target="_blank" type="button">
                 <div className="layout-menu--social-item">
                     <Icons name={item.iconKey} size={item.size} />
                 </div>
