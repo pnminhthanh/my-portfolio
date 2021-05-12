@@ -38,11 +38,11 @@ const timelineItems = [
         companyName: 'S3Corp',
         companyUrl: 'https://www.s3corp.com.vn/',
         projects: [
-            {
-                name: 'Razer - Synapse 3',
-                url: 'https://www.razer.com/synapse-3',
-                desc: 'A desktop application supports user to modify their Razer gaming gears'
-            },
+            // {
+            //     name: 'Razer - Synapse 3',
+            //     url: 'https://www.razer.com/synapse-3',
+            //     desc: 'A desktop application supports user to modify their Razer gaming gears'
+            // },
             {
                 name: 'THX Spatial',
                 url: 'https://www.razer.com/p/RZ11-13000-0001',
