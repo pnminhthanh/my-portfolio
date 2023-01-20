@@ -3,14 +3,17 @@ import * as React from 'react';
 import { Layout } from '../components';
 import '../components/index.css';
 import { IProject, TIMELINE } from '../models/portfolio';
+import { TEXTS } from '../static/text';
 
 
 const Portfolio = () => {
     const renderProjectItem = (data: IProject[]) => {
         if (!data || data.length === 0) return;
-        return data.map(item => {
-            return <div className='project'>
-                <div className='project-name'>{item.url ? <a href={item.url} target="_blank">{item.name}</a> : item.name}</div>
+        return data.map((item, index) => {
+            return <div className='project' key={`project-${index}`}>
+                <div className='project-name'>
+                    {item.url ? <a href={item.url} target="_blank">{item.name}</a> : item.name}
+                </div>
                 {item.desc && <div className='project-short-desc'>{item.desc}</div>}
             </div>
         })
@@ -18,9 +21,9 @@ const Portfolio = () => {
 
     const renderParagraph = (data: string[]) => {
         if (!data || data.length === 0) return;
-        return data.map((item, index) => {
-            return <p key={`paragraph-${index}`}>{item}</p>
-        })
+        return data.map((item, index) => (
+            <p key={`paragraph-${index}`}>{item}</p>
+        ))
 
     }
 
@@ -31,7 +34,11 @@ const Portfolio = () => {
                     <div className='milestone'>
                         {item.time}
                     </div>
-                    <div className='cooperation'>{item.companyUrl ? <a href={item.companyUrl} target="_blank">{item.companyName}</a> : item.companyName}</div>
+                    <div className='cooperation'>
+                        {item.companyUrl
+                            ? <a href={item.companyUrl} target="_blank">{item.companyName}</a>
+                            : item.companyName}
+                    </div>
                 </div>
                 <div className='timeline-content'>
                     {item.projects && renderProjectItem(item.projects)}
@@ -44,10 +51,10 @@ const Portfolio = () => {
     return <Layout>
         <div className="portfolio-page">
             <div className='page--header'>
-                <div className='header-title'>Portfolio</div>
-                <div className='header-subtitle'>
-                    Below is my timeline work experience. My main role in each project is <b>Frontend developer</b>.
-                </div>
+                <h1 className='header-title'>{TEXTS.PORTFOLIO_PAGE.TITLE}</h1>
+                <h3 className='header-subtitle'>
+                    {TEXTS.PORTFOLIO_PAGE.SUBTILE()}
+                </h3>
             </div>
             <div className='page--content'>
                 {renderTimelineItems}
@@ -55,4 +62,5 @@ const Portfolio = () => {
         </div>
     </Layout>
 }
+
 export default Portfolio;

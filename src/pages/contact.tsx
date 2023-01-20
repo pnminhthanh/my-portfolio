@@ -17,8 +17,8 @@ const Portfolio = () => {
     return <Layout>
         <div className="contact-page">
             <div className='page--header'>
-                <div className='header-title'>CONTACT ME</div>
-                <div className='header-subtitle'>I'm currently looking for new full-time job oppoturnities.</div>
+                <h1 className='header-title'>CONTACT ME</h1>
+                <h3 className='header-subtitle'>I'm currently looking for new full-time job oppoturnities.</h3>
             </div>
             <div className='page--content'>
                 <div className='contact-card-container'>

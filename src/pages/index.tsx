@@ -3,6 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { Layout } from '../components';
 
 import '../components/index.css';
+import { TEXTS } from "../static/text";
 
 const IndexPage = () => {
   const props = useSpring({
@@ -16,9 +17,9 @@ const IndexPage = () => {
 
   return <Layout>
     <animated.div style={props} className="introduction-page">
-      <h1>Hello,<br /> I'm  Minh Thanh.</h1>
-      <p>A front-end developer from Ho Chi Minh City. <br />I'm interested in web design mockup and turn things from a draft to a "real".</p>
-      <p>Welcome to my website.</p>
+      {TEXTS.HOME_PAGE.HELLO()}
+      {TEXTS.HOME_PAGE.INTRO()}
+      {TEXTS.HOME_PAGE.WELCOME()}
     </animated.div>
   </Layout>
 }

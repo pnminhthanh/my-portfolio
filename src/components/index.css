@@ -41,6 +41,10 @@
     box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
 }
 
+.layout-menu-container.is-expanded {
+    width: 295px;
+}
+
 .layout-menu-container::-webkit-scrollbar {
     display: none;
 }
@@ -132,6 +136,7 @@
 
 /*#endregion*/
 
+/*#region Layout*/
 .layout-content {
     flex: 1;
     padding: 20px 40px;
@@ -158,8 +163,9 @@
 .header-subtitle {
     font-weight: 300;
     color: #3c3c3ed6;
-    margin-top: 6px;
 }
+
+/*#endregion*/
 
 /*#region Introduction*/
 
@@ -179,6 +185,10 @@
     font-size: 1.3em;
     color: #4d4c4c;
     font-weight: 200;
+}
+
+.introduction-page>p:last-child {
+    font-weight: 300;
 }
 
 /*#endregion*/
@@ -210,6 +220,7 @@
 
 .milestone {
     padding-right: 20px;
+    padding-bottom: 10px;
     position: relative;
     text-align: right;
     font-weight: 200;
@@ -254,7 +265,7 @@
 }
 
 .timeline-content>.project {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .timeline-content p {
@@ -265,6 +276,7 @@
     color: #644118;
     font-weight: 400;
     font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .project-name a {
