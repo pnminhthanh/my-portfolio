@@ -7,8 +7,8 @@ import { Menu } from "./menu"
 export const Layout = ({ children }) => {
   return (
     <>
+      <Seo title="Minh Thanh" />
       <div className="layout-container bg-cover">
-        <Seo title="Minh Thanh" />
         <Menu />
         <div className="layout-content">
           {children}

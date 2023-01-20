@@ -38,6 +38,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
 }
 
 .layout-menu-container::-webkit-scrollbar {
@@ -70,12 +71,8 @@
 }
 
 .image-avatar {
-    background-image: url('../images/avatar.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: border-box;
+    background-image: url('../images/avatar.jpeg');
     background-size: cover;
-    background-blend-mode: overlay;
 }
 
 .layout-menu--navigation-wrapper {

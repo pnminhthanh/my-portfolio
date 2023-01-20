@@ -1,41 +1,23 @@
 import React from 'react';
 import { Link } from "gatsby";
-import { Icon } from '.';
 
-interface ISocialItems {
-    iconKey: 'mail' | 'linkedin' | 'fb' | 'git',
-    link: string,
-    size?: number
-}
+import { Icon } from '.';
+import { NAVIGATIONS, SOCIAL_CHANNELS } from '../models/menu';
 
 export const Menu = () => {
-    const navigations = [
-        { name: 'PORTFOLIO', link: '/portfolio' },
-        { name: 'CONTACT ME', link: '/contact' },
-        { name: 'MY CV', link: 'https://drive.google.com/file/d/1EfHUhBAr06WHcOocttreh44R6XRdjT9x/view?usp=sharing', isOuterLink: true },
-    ]
-
-    const socialItems = [
-        { iconKey: 'mail', link: 'mailto:minhthanh3497@gmail.com' },
-        { iconKey: 'linkedin', link: 'https://www.linkedin.com/in/pnminhthanh/' },
-        { iconKey: 'fb', link: 'https://www.facebook.com/mthanh97/' },
-        { iconKey: 'git', link: 'https://github.com/pnminhthanh/', size: 30 }
-    ] as ISocialItems[];
-
-    const __renderNavigationItems = () => {
-        return navigations.map(item => {
-            let key = 'layout-menu--navigation-item-' + item.name
-            return <Link key={key}
+    const renderNavigationItems = () => {
+        return NAVIGATIONS.map(item => (
+            <Link key={`layout-menu--navigation-item-${item.name}`}
                 to={item.link}
                 className="layout-menu--navigation-item"
                 activeClassName="active">
                 {item.name}
             </Link>
-        })
+        ))
     }
 
-    const __renderSocialItems = () => {
-        return socialItems.map(item => {
+    const renderSocialItems = () => {
+        return SOCIAL_CHANNELS.map(item => {
             let key = 'layout-menu--social-item-' + item.iconKey
             return <a key={key} href={item.link} target="_blank" type="button">
                 <div className="layout-menu--social-item">
@@ -54,12 +36,12 @@ export const Menu = () => {
             <div className="title">Front-end Software Engineer</div>
         </div>
         <div className="layout-menu--navigation-wrapper">
-            {__renderNavigationItems()}
+            {renderNavigationItems()}
         </div>
         <div className="layout-menu--keep-in-touch-wrapper">
             <div className="title">Get in touch</div>
             <div className="social-buttons">
-                {__renderSocialItems()}
+                {renderSocialItems()}
             </div>
         </div>
     </div>

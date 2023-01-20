@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Layout } from '../components';
 
+import { Layout } from '../components';
 import '../components/index.css';
+import { CONTACTS } from '../models/contact';
 
 const Portfolio = () => {
     const renderCardItems = React.useMemo(() => {
-        return cardItems.map(item => {
+        return CONTACTS.map(item => {
             return <div className='contact-card--item' key={`contact-card--item-${item.title}`}>
                 <div className="title"><b>{item.title}: </b></div>
                 <div className="content"><a href={item.url} target="_blank">{item.content}</a></div>
@@ -27,12 +28,5 @@ const Portfolio = () => {
         </div>
     </Layout>
 }
-
-const cardItems = [
-    { title: 'Email', content: 'minhthanh3497@gmail.com', url: 'mailto:minhthanh3497@gmail.com' },
-    { title: 'Linkedin', content: 'pnminhthanh', url: 'https://www.linkedin.com/in/pnminhthanh/' },
-    { title: 'Facebook', content: 'mthanh97', url: 'https://www.facebook.com/mthanh97/' },
-    { title: 'Github', content: 'pnminhthanh', url: 'https://github.com/pnminhthanh/' }
-]
 
 export default Portfolio;
