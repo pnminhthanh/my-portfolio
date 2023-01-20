@@ -7,8 +7,8 @@ interface IIconsProps {
     size?: number
 }
 
-export const Icons = (props: IIconsProps) => {
-    const { name, className, size } = props;
+export const Icon = (props: IIconsProps) => {
+    const { name, className = '', size } = props;
     let customStyle = size ? { width: size, height: size, } : {};
     let cls = classnames({
         'layout-icon-wrapper': true,

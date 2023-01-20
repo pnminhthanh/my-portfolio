@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
-import { Icons } from '.';
+import { Icon } from '.';
 
 interface ISocialItems {
     iconKey: 'mail' | 'linkedin' | 'fb' | 'git',
@@ -39,7 +39,7 @@ export const Menu = () => {
             let key = 'layout-menu--social-item-' + item.iconKey
             return <a key={key} href={item.link} target="_blank" type="button">
                 <div className="layout-menu--social-item">
-                    <Icons name={item.iconKey} size={item.size} />
+                    <Icon name={item.iconKey} size={item.size} />
                 </div>
             </a>
         })

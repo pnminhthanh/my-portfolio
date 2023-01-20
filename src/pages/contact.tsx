@@ -4,15 +4,14 @@ import { Layout } from '../components';
 import '../components/index.css';
 
 const Portfolio = () => {
-
-    const __renderCardItem = () => {
+    const renderCardItems = React.useMemo(() => {
         return cardItems.map(item => {
             return <div className='contact-card--item' key={`contact-card--item-${item.title}`}>
                 <div className="title"><b>{item.title}: </b></div>
                 <div className="content"><a href={item.url} target="_blank">{item.content}</a></div>
             </div>
         })
-    }
+    }, [])
 
     return <Layout>
         <div className="contact-page">
@@ -22,7 +21,7 @@ const Portfolio = () => {
             </div>
             <div className='page--content'>
                 <div className='contact-card-container'>
-                    {__renderCardItem()}
+                    {renderCardItems}
                 </div>
             </div>
         </div>
