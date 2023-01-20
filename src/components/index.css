@@ -23,7 +23,7 @@
     background-origin: border-box;
     background-size: cover;
     background-blend-mode: overlay;
-    background-color: rgb(255 255 255 / 70%);
+    background-color: rgb(255 255 255 / 80%);
 }
 
 /*#region Menu*/
@@ -139,19 +139,18 @@
 /*#region Layout*/
 .layout-content {
     flex: 1;
-    padding: 20px 40px;
+    padding: 24px 48px;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    max-width: 100%;
 }
 
 .page--header {
-    margin: 10px 30px;
+    /* margin: 0px 30px; */
 }
 
 .page--content {
-    margin-top: 24px;
+    margin-top: 60px;
 }
 
 .header-title {
@@ -193,9 +192,11 @@
 
 /*#endregion*/
 
-/*#region Portfolio*/
+/*#region Experience*/
 
-.portfolio-page {}
+.experience-page {
+    padding-bottom: 100px;
+}
 
 .timeline {
     position: relative;
@@ -205,7 +206,7 @@
 .timeline-year {
     flex: 0 0 180px;
     position: relative;
-    padding: 16px 0;
+    padding: 1.5rem 0 4rem;
 }
 
 .timeline-year::after {
@@ -242,7 +243,7 @@
 
 .cooperation {
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: right;
     padding-right: 20px;
 }
@@ -257,7 +258,7 @@
 
 .timeline-content {
     flex: 1;
-    margin: 16px 0px 16px 24px;
+    padding: 1.5em 2em 3em;
 }
 
 .timeline-content p {
@@ -265,7 +266,7 @@
 }
 
 .timeline-content>.project {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .timeline-content p {
@@ -274,9 +275,9 @@
 
 .project-name {
     color: #644118;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .project-name a {
@@ -288,14 +289,54 @@
 }
 
 .project-short-desc {
-    font-size: 0.9em;
-    font-weight: 200;
+    font-weight: 300;
     color: #3e3e3c;
+}
+
+.project-tech-stack {
+    margin: 1em 0;
+    color: #3e3e3c;
+}
+
+.project-tech-stack label {
+    margin-right: 6px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.project-tech-item {
+    font-size: 0.8em;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    padding: 2px 4px;
+    margin: 0 4px;
+    background-color: #6e6d6d1f;
+}
+
+.responsibilities {
+    color: #3e3e3c;
+}
+
+.responsibilities ul {
+    margin: 15px 0 0 0;
+    padding-inline-start: 1.5em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.responsibilities ul li {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #3e3e3c;
+    padding: 0.2em;
 }
 
 /*#endregion*/
 
 /*#region Contact me*/
+.contact-page {
+    position: absolute;
+}
 
 .contact-card-container {
     background-color: white;

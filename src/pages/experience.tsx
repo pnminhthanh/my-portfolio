@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import { Layout } from '../components';
-import '../components/index.css';
 import { IProject, TIMELINE } from '../models/portfolio';
 import { TEXTS } from '../static/text';
 
@@ -15,16 +14,32 @@ const Portfolio = () => {
                     {item.url ? <a href={item.url} target="_blank">{item.name}</a> : item.name}
                 </div>
                 {item.desc && <div className='project-short-desc'>{item.desc}</div>}
+                {item.tech && item.tech.length > 0 &&
+                    <div className='project-tech-stack'>
+                        <label>{TEXTS.EXPERIENCE_PAGE.TECH_STACK}</label>
+                        {
+                            item.tech.map((tech, index) => (
+                                <span className='project-tech-item' key={`${tech}-${index}`}>{tech}</span>
+                            ))
+                        }
+                    </div>
+                }
             </div>
         })
     }
 
-    const renderParagraph = (data: string[]) => {
+    const renderResponsibilities = (data: string[]) => {
         if (!data || data.length === 0) return;
-        return data.map((item, index) => (
-            <p key={`paragraph-${index}`}>{item}</p>
-        ))
-
+        return <div className='responsibilities'>
+            <div>{TEXTS.EXPERIENCE_PAGE.RESPONSIBILITIES}</div>
+            <ul>
+                {
+                    data.map((item, index) => (
+                        <li key={`paragraph-${index}`}>{item}</li>
+                    ))
+                }
+            </ul>
+        </div>
     }
 
     const renderTimelineItems = React.useMemo(() => {
@@ -42,18 +57,18 @@ const Portfolio = () => {
                 </div>
                 <div className='timeline-content'>
                     {item.projects && renderProjectItem(item.projects)}
-                    {item.paragraphs && renderParagraph(item.paragraphs)}
+                    {item.responsibilities && renderResponsibilities(item.responsibilities)}
                 </div>
             </div>
         ))
     }, [])
 
     return <Layout>
-        <div className="portfolio-page">
+        <div className="experience-page">
             <div className='page--header'>
-                <h1 className='header-title'>{TEXTS.PORTFOLIO_PAGE.TITLE}</h1>
+                <h1 className='header-title'>{TEXTS.EXPERIENCE_PAGE.TITLE}</h1>
                 <h3 className='header-subtitle'>
-                    {TEXTS.PORTFOLIO_PAGE.SUBTILE()}
+                    {TEXTS.EXPERIENCE_PAGE.SUBTILE()}
                 </h3>
             </div>
             <div className='page--content'>

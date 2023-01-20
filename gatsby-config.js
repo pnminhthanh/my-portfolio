@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Minh Thanh`,
-    description: `A front-end developer`,
+    description: `A frontend Developer`,
     author: `@minhthanhpham`,
   },
   pathPrefix: `/my-portfolio`,

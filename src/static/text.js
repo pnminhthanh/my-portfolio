@@ -21,13 +21,15 @@ export const TEXTS = {
     ),
     WELCOME: () => <p>Welcome to my website.</p>,
   },
-  PORTFOLIO_PAGE: {
-    TITLE: 'Portfolio',
+  EXPERIENCE_PAGE: {
+    TITLE: 'Experience',
     SUBTILE: () => (
       <>
-        Below is my timeline work experience. My main role in each project is{' '}
+        Below is my timeline of work experience. My main role in each project is{' '}
         <b>Frontend Developer</b>.
       </>
     ),
+    RESPONSIBILITIES: 'Main responsibilites:',
+    TECH_STACK: 'Tech stack:',
   },
 }
