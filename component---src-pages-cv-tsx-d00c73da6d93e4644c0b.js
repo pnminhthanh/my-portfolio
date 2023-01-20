@@ -1,0 +1,2 @@
+(self.webpackChunkminh_thanh_portfolio=self.webpackChunkminh_thanh_portfolio||[]).push([[834],{1942:function(n,t,e){"use strict";e.r(t);var l=e(7294),a=e(7505);t.default=function(){return l.createElement(a.Ar,null,l.createElement("div",null,"I'm still updating my CV. I'll upload it soon. Please wait. Thank you!"))}}}]);
+//# sourceMappingURL=component---src-pages-cv-tsx-d00c73da6d93e4644c0b.js.map
