@@ -19,7 +19,12 @@ export const TEXTS = {
         a "real".
       </p>
     ),
-    WELCOME: () => <p>Welcome to my website.</p>,
+    WELCOME: () => (
+      <>
+        <a href="/experience">Checkout my working experience</a>
+        <span>&#x2192;</span>
+      </>
+    ),
   },
   EXPERIENCE_PAGE: {
     TITLE: 'Experience',

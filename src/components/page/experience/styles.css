@@ -86,10 +86,25 @@
 
 .project-name a {
   color: #644118;
+  cursor: pointer;
+  position: relative;
 }
 
-.project-name a:hover {
-  color: #644118c0;
+.project-name a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #644118;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  text-decoration: none;
+}
+
+.project-name a:hover::after {
+  width: 100%;
 }
 
 .project-short-desc {

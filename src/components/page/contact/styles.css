@@ -21,8 +21,23 @@
 
 .contact-card--item > .content a {
   color: #644118;
+  cursor: pointer;
+  position: relative;
 }
 
-.contact-card--item > .content a:hover {
-  color: #644118c0;
+.contact-card--item > .content a::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #644118;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-card--item > .content a:hover::after {
+  width: 100%;
 }

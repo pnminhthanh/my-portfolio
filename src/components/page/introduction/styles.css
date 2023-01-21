@@ -14,8 +14,54 @@
   font-size: 1.3em;
   color: #4d4c4c;
   font-weight: 200;
+  letter-spacing: 0.1px;
+  line-height: 1.6em;
 }
 
-.introduction-page > p:last-child {
+.introduction-button {
   font-weight: 300;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 48%;
+}
+
+.introduction-button a {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.2px;
+  color: #4d4c4c;
+}
+
+.introduction-button a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #4d4c4c;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: width 0.3s ease;
+  text-decoration: none;
+}
+
+.introduction-button a:hover::after {
+  width: 100%;
+}
+
+.introduction-button span {
+  margin-left: 0.5rem;
+  font-size: 27px;
+  line-height: 15px;
+  position: absolute;
+  right: 0;
+  animation: move 0.8s ease infinite;
+}
+
+@keyframes move {
+  50% {
+    right: 10px;
+  }
 }

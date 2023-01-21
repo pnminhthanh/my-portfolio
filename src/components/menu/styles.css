@@ -1,6 +1,6 @@
 .layout-menu-container {
   flex: 0 1 auto;
-  padding: 3rem 0 1rem;
+  padding: 24px 0 16px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
-  transition: width 200ms ease;
+  transition: all 200ms ease;
   width: 5rem;
 }
 
@@ -84,9 +84,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: milestoneer;
-  text-decoration: none;
   color: #6e6d6d;
+  position: relative;
+}
+
+.layout-menu--navigation-item::after {
+  content: '';
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    #b59666
+  );
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  transition: width 0.3s ease;
+  z-index: 0;
 }
 
 .layout-menu-container .layout-menu--navigation-item span {
@@ -95,14 +109,22 @@
   flex-wrap: nowrap;
 }
 
+.layout-menu-container:hover .layout-menu--navigation-item img {
+  z-index: 1;
+}
+
 .layout-menu-container:hover .layout-menu--navigation-item span {
   opacity: 1;
   white-space: nowrap;
+  z-index: 1;
 }
 
 .layout-menu--navigation-item:hover {
-  background-color: #b59666;
   color: #000000;
+}
+
+.layout-menu--navigation-item:hover::after {
+  width: 100%;
 }
 
 .layout-menu--navigation-item.active {
