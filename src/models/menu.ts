@@ -1,3 +1,5 @@
+import { IconNameType } from "../components/icon";
+
 interface ISocial {
     iconKey: 'mail' | 'linkedin' | 'fb' | 'git',
     link: string,
@@ -5,9 +7,9 @@ interface ISocial {
 }
 
 export const NAVIGATIONS = [
-    { name: 'EXPERIENCE', link: '/experience' },
-    { name: 'CONTACT ME', link: '/contact' },
-    { name: 'RESUME', link: '/resume' },
+    { name: 'EXPERIENCE', link: '/experience', icon: 'experience' as IconNameType },
+    { name: 'CONTACT ME', link: '/contact', icon: 'contact' as IconNameType },
+    { name: 'RESUME', link: '/resume', icon: 'resume' as IconNameType },
 ]
 
 export const SOCIAL_CHANNELS = [

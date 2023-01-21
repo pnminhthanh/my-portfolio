@@ -1,6 +1,7 @@
 .layout-menu-container {
   flex: 0 1 auto;
   padding: 3rem 0 1rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-white);
@@ -14,9 +15,8 @@
   width: 5rem;
 }
 
-.layout-menu-container:hover,
-.layout-menu-container.is-expanded {
-  width: 19rem;
+.layout-menu-container:hover {
+  width: 16rem;
 }
 
 .layout-menu-container::-webkit-scrollbar {
@@ -58,13 +58,13 @@
 }
 
 .image-avatar {
-  background-image: url('../../images/avatar.jpeg');
+  background-image: url('../../assets/images/avatar.jpeg');
   background-size: cover;
 }
 
 .layout-menu-container:hover .layout-menu--information-avatar {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .layout-menu--navigation-wrapper {
@@ -78,11 +78,26 @@
 }
 
 .layout-menu--navigation-item {
-  transition: all 0.3s linear;
-  padding: 12px;
+  transition: all 0.2s linear;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: milestoneer;
   text-decoration: none;
   color: #6e6d6d;
+}
+
+.layout-menu-container .layout-menu--navigation-item span {
+  opacity: 0;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.layout-menu-container:hover .layout-menu--navigation-item span {
+  opacity: 1;
+  white-space: nowrap;
 }
 
 .layout-menu--navigation-item:hover {
@@ -96,17 +111,27 @@
 }
 
 .layout-menu--keep-in-touch-wrapper {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 0 0 60px;
 }
 
+.layout-menu-container:hover .layout-menu--keep-in-touch-wrapper {
+  display: flex;
+}
+
 .layout-menu--keep-in-touch-wrapper .title {
+  white-space: nowrap;
+  flex-wrap: nowrap;
   font-size: 1em;
   font-weight: 300;
   color: #232129bd;
+}
+
+.layout-menu--keep-in-touch-wrapper .social-buttons {
+  display: flex;
 }
 
 .layout-menu--social-item {
@@ -120,4 +145,14 @@
   background-color: #64411817;
   border-radius: 4px;
   transition: all 0.3s;
+}
+
+.layout-menu--arrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.layout-menu-container:hover .layout-menu--arrow {
+  display: none;
 }
