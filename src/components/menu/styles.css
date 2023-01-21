@@ -1,0 +1,123 @@
+.layout-menu-container {
+  flex: 0 1 auto;
+  padding: 3rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-white);
+  justify-content: space-between;
+  list-style: none;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+  transition: width 200ms ease;
+  width: 5rem;
+}
+
+.layout-menu-container:hover,
+.layout-menu-container.is-expanded {
+  width: 19rem;
+}
+
+.layout-menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+.layout-menu--information {
+  display: flex;
+  padding: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 300px;
+}
+
+.layout-menu--information .name {
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.layout-menu--information .title {
+  color: #6e6d6d;
+  opacity: 0;
+}
+
+.layout-menu-container:hover .layout-menu--information .name,
+.layout-menu-container:hover .layout-menu--information .title {
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.layout-menu--information-avatar {
+  border-radius: 50%;
+  margin-bottom: 24px;
+  width: 4rem;
+  height: 4rem;
+  transition: all 200ms ease;
+}
+
+.image-avatar {
+  background-image: url('../../images/avatar.jpeg');
+  background-size: cover;
+}
+
+.layout-menu-container:hover .layout-menu--information-avatar {
+  width: 12rem;
+  height: 12rem;
+}
+
+.layout-menu--navigation-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  flex: 1 1 auto;
+}
+
+.layout-menu--navigation-item {
+  transition: all 0.3s linear;
+  padding: 12px;
+  cursor: milestoneer;
+  text-decoration: none;
+  color: #6e6d6d;
+}
+
+.layout-menu--navigation-item:hover {
+  background-color: #b59666;
+  color: #000000;
+}
+
+.layout-menu--navigation-item.active {
+  background-color: #b59666;
+  color: #000000;
+}
+
+.layout-menu--keep-in-touch-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 60px;
+}
+
+.layout-menu--keep-in-touch-wrapper .title {
+  font-size: 1em;
+  font-weight: 300;
+  color: #232129bd;
+}
+
+.layout-menu--social-item {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-menu--social-item:hover {
+  background-color: #64411817;
+  border-radius: 4px;
+  transition: all 0.3s;
+}

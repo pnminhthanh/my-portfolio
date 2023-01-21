@@ -1,0 +1,26 @@
+.layout-content {
+  flex: 1;
+  padding: 24px 48px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.page--header {
+  /* margin: 0px 30px; */
+}
+
+.page--content {
+  margin-top: 60px;
+}
+
+.header-title {
+  color: #3c3c3e;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  font-weight: 300;
+  color: #3c3c3ed6;
+}

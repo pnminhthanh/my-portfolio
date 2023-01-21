@@ -7,7 +7,7 @@ interface ISocial {
 export const NAVIGATIONS = [
     { name: 'EXPERIENCE', link: '/experience' },
     { name: 'CONTACT ME', link: '/contact' },
-    { name: 'MY CV', link: 'https://drive.google.com/file/d/1EfHUhBAr06WHcOocttreh44R6XRdjT9x/view?usp=sharing', isOuterLink: true },
+    { name: 'RESUME', link: '/resume' },
 ]
 
 export const SOCIAL_CHANNELS = [

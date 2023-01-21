@@ -1,0 +1,136 @@
+.experience-page {
+  padding-bottom: 100px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+}
+
+.timeline-year {
+  flex: 0 0 180px;
+  position: relative;
+  padding: 1.5rem 0 4rem;
+}
+
+.timeline-year::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.milestone {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: right;
+  font-weight: 200;
+  font-style: oblique;
+}
+
+.milestone::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  background-color: white;
+  border: 3px solid #b59666;
+  top: 3px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.cooperation {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cooperation a {
+  color: #644118;
+}
+
+.cooperation a:hover {
+  color: #644118c0;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 1.5em 2em 3em;
+}
+
+.timeline-content p {
+  font-weight: 200;
+}
+
+.timeline-content > .project {
+  margin-bottom: 2em;
+}
+
+.timeline-content p {
+  margin: 6px 0;
+}
+
+.project-name {
+  color: #644118;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.project-name a {
+  color: #644118;
+}
+
+.project-name a:hover {
+  color: #644118c0;
+}
+
+.project-short-desc {
+  font-weight: 300;
+  color: #3e3e3c;
+}
+
+.project-tech-stack {
+  margin: 1em 0;
+  color: #3e3e3c;
+}
+
+.project-tech-stack label {
+  margin-right: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.project-tech-item {
+  font-size: 0.8em;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 2px 4px;
+  margin: 0 4px;
+  background-color: #6e6d6d1f;
+}
+
+.responsibilities {
+  color: #3e3e3c;
+}
+
+.responsibilities ul {
+  margin: 15px 0 0 0;
+  padding-inline-start: 1.5em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.responsibilities ul li {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #3e3e3c;
+  padding: 0.2em;
+}

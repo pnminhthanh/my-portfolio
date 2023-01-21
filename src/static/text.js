@@ -32,4 +32,23 @@ export const TEXTS = {
     RESPONSIBILITIES: 'Main responsibilites:',
     TECH_STACK: 'Tech stack:',
   },
+  CONTACT_PAGE: {
+    TITLE: 'CONTACT ME',
+    SUBTILE: "I'm currently looking for new full-time job oppoturnities.",
+  },
+  RESUME_PAGE: {
+    TITLE: 'Resume',
+    SUBTILE: () => (
+      <>
+        Here is my resume.{' '}
+        <a
+          href="https://drive.google.com/file/d/1EfHUhBAr06WHcOocttreh44R6XRdjT9x/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Click to see.
+        </a>
+      </>
+    ),
+  },
 }
