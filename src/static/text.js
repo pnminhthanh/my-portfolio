@@ -21,7 +21,7 @@ export const TEXTS = {
     ),
     WELCOME: () => (
       <>
-        <a href="/experience">Checkout my working experience</a>
+        <a href="/my-portfolio/experience">Checkout my working experience</a>
         <span>&#x2192;</span>
       </>
     ),
