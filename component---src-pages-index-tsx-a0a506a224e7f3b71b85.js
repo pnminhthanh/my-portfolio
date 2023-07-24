@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkminh_thanh_portfolio=self.webpackChunkminh_thanh_portfolio||[]).push([[691],{6738:function(t,e,o){o.r(e);var n=o(7294),a=o(9514),i=o(5977),r=o(1798);e.default=function(){var t=(0,a.useSpring)({to:{opacity:1,top:0},from:{opacity:0,top:-100},delay:200,reset:!0,config:{duration:600}});return n.createElement(i.Ar,null,n.createElement(a.animated.div,{style:t,className:"introduction-page"},r.o.HOME_PAGE.HELLO(),r.o.HOME_PAGE.INTRO(),r.o.HOME_PAGE.WELCOME()))}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-a0a506a224e7f3b71b85.js.map
