@@ -1,5 +1,5 @@
-## This is my portfolio
+# This is my portfolio
 
-# Made by Thanh
+## Made by Thanh
 
-# :)
+## :)
