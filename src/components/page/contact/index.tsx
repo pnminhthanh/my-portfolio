@@ -2,8 +2,9 @@ import * as React from 'react'
 import { useSpring, animated } from '@react-spring/web'
 
 import { CONTACTS } from '../../../models/contact'
-import './styles.css'
 import { TEXTS } from '../../../static/text'
+
+import './styles.css'
 
 const Contact = () => {
   const props = useSpring({
@@ -13,7 +14,7 @@ const Contact = () => {
     config: { duration: 300 },
   })
 
-  const renderCardItems = React.useMemo(() => {
+  const renderCardItems = () => {
     return CONTACTS.map((item) => {
       return (
         <div
@@ -31,7 +32,7 @@ const Contact = () => {
         </div>
       )
     })
-  }, [])
+  }
 
   return (
     <animated.div style={props} className="contact-page">
@@ -40,7 +41,7 @@ const Contact = () => {
         <h3 className="header-subtitle">{TEXTS.CONTACT_PAGE.SUBTILE}</h3>
       </div>
       <div className="page--content">
-        <div className="contact-card-container">{renderCardItems}</div>
+        <div className="contact-card-container">{renderCardItems()}</div>
       </div>
     </animated.div>
   )

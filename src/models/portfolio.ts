@@ -15,6 +15,23 @@ export interface ITimeline {
 
 export const TIMELINE = [
     {
+        time: 'March 2023 - Now',
+        companyName: 'PAVE',
+        companyUrl: 'https://pave.ai/',
+        projects: [
+            {
+                name: 'PAVE Capture PWA 2.0',
+                desc: 'A web application with a mobile-first design for the client to capture pictures of their vehicles for inspection purposes',
+                tech: ['SvelteKit', 'TailwindCSS', 'TypeScript']
+            }
+        ],
+        responsibilities: [
+            "Setup source code",
+            "Migrate, optimize, and enhance the first version's features",
+            "Design UI / UX for the app"
+        ]
+    },
+    {
         time: 'Jan 2023',
         companyName: 'VNG Corporation',
         companyUrl: 'https://vng.com.vn/',

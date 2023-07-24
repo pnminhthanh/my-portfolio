@@ -42,7 +42,7 @@ const Experience = () => {
         </div>
     }
 
-    const renderTimelineItems = React.useMemo(() => {
+    const renderTimelineItems = () => {
         return TIMELINE.map((item, index) => (
             <div className='timeline' key={`timeline-${index}`}>
                 <div className='timeline-year'>
@@ -61,7 +61,7 @@ const Experience = () => {
                 </div>
             </div>
         ))
-    }, [])
+    }
 
     return <div className="experience-page">
         <div className='page--header'>
@@ -71,7 +71,7 @@ const Experience = () => {
             </h3>
         </div>
         <div className='page--content'>
-            {renderTimelineItems}
+            {renderTimelineItems()}
         </div>
     </div>
 }
